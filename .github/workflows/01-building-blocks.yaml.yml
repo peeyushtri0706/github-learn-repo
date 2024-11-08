@@ -3,13 +3,13 @@ on:
     push:
         branches: "main"
 jobs: 
-    build:
+    echo-hello:
             runs-on: ubuntu-latest
             steps:
                 - name: FirstJob
                   run: echo "hello world"
-    test:
+    echo-goodbye:
             runs-on: ubuntu-latest
             steps:
-                - name: FirstJob
-                  run: echo "bye world"
+                - name: Say hello
+                  run: echo "I will fail"
