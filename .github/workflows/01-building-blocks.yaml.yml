@@ -1,0 +1,15 @@
+name: 01-building-blocks
+on:
+    push:
+        branches: "main"
+jobs: 
+    build:
+            runs-on: ubuntu-latest
+            steps:
+                - name: FirstJob
+                  run: echo "hello world"
+    test:
+            runs-on: ubuntu-latest
+            steps:
+                - name: FirstJob
+                  run: echo "bye world"
